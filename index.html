@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <title>Crystal Collector</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+<div class="header">
+    <h1>Crystal Collector</h1>
+</div>
+
+<div class="instructions">
+    <p>You are given a random number and four crystals. Each crystal is equal to a unknown amount that changes with each game. Click on each crystal to see its amount. It is your challenge to correctly choose the amount of clicks each crystal should receive to match the random target number. If your number goes above the target amount, you lose and will have to retry</p>
+</div>
+    
+<div class="row">
+    <div class="col-sm-4">Target number: <span id="targetNum"></span></div>
+    <div class="col-sm-4">Wins: <span id="gamesWon"></span></div>
+    <div class="col-sm-4">Losses: <span id="gamesLost"></span></div>
+</div>
+
+<div class="buttons">
+    <button id="gemOne" type="btn"><img class="gemstone" alt="blue gemstone" src="./assets/images/sapphire-icon.png"></button>
+    <button id="gemTwo" type="btn"><img class="gemstone" alt="white gemstone" src="./assets/images/diamond2-icon.png"></button>
+    <button id="gemThree" type="btn"><img class="gemstone" alt="red gemstone" src="./assets/images/ruby-icon.png"></button>
+    <button id="gemFour" type="btn"><img class="gemstone" alt="purple gemstone" src="./assets/images/diamond-icon.png"></button>
+</div>
+
+<div class="currentNum">
+    <div class="result">Your Number: <span id="resultNum"></span>
+</div>
+</div>
+
+<div class="row">
+        <button type="button" class="btn btn-danger">Start Over</button>
+</div>
+
+<script>
+    $(document).ready(function() {
+
+        //variables needed
+
+        var targetNum
+        var gamesWon
+        var gamesLost
+        var gemstone
+        var resultNum
+
+        function initializeCrystals()   {
+            
+        }
+        $("#btn-danger").on("click", function() {
+            $(".resultNum").empty();
+    }
+</script>
+
+</body>
+</html>
