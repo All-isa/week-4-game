@@ -1,6 +1,6 @@
 var wins = 0;
 var losses = 0;
-var result = 0 ;
+var result = 0;
 var randomNum ;
 
 var gemOne = parseInt(Math.floor(Math.random() * 12) + 1);
@@ -17,16 +17,12 @@ console.log("gemFour: " + gemThree);
 console.log("gemThree: " + gemFour);
 console.log("**********************");
 // =======================================================
+//start and restarting game//
 
-function initializeGame()    {
-//  var randomNum = parseInt(Math.floor(Math.random() * 102) + 19);
-//  $("#randomNum").text(randomNum);
+function initializeGame()  {
 
-//    var gemOne = parseInt(Math.floor(Math.random() * 12) + 1);
-//    var gemTwo = parseInt(Math.floor(Math.random() * 12) + 1);
- //   var gemThree = parseInt(Math.floor(Math.random() * 12) + 1);
- //   var gemFour = parseInt(Math.floor(Math.random() * 12) + 1);
-    var result = 0;
+    result = 0;
+
     randomNum = parseInt(Math.floor(Math.random() * 102) + 19);
 
     $("#wins").html("Wins: " + wins);
@@ -35,6 +31,8 @@ function initializeGame()    {
     $("#randomNum").html(randomNum);
     
 }
+
+//checking if user has won or lost
 
 function userWinOrLose()    {
     if (result > randomNum) {
@@ -51,6 +49,8 @@ function userWinOrLose()    {
         initializeGame();
     }
 }
+
+//main process of game
 
 initializeGame();
 
