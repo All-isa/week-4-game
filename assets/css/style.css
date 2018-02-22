@@ -30,5 +30,8 @@ button  {
     padding-top: 50px;
     font-family: satisfy;
     font: size 32px;
+}
 
+.result {
+    padding-bottom:50px;
 }
